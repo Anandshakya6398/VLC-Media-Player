@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLC Media Player</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header>
+        <div class="titlebar">
+            <img src="R.png" alt="vlc logo" class="title-img">
+            <h1 class="title">VLC Media Player</h1>
+        </div>
+        <!-- <hr> -->
+        <div class="menu-bar">
+            <div class="menu">
+                <div class="menu-btn" id="videoBtn">Open</div>
+                <input type="file" class="videoInput" id="videoInput">
+            </div>
+            <div class="menu">
+                <div class="menu-btn">Playback</div>
+                <ul class="menu-items" >
+                    <li id="speedUp">Speedup</li>
+                    <li id="speedDown">Speeddown</li>
+                </ul>
+            </div>
+            <div class="menu">
+              <div class="menu-btn">Audio</div>
+              <ul class="menu-items" >
+                <li id="volumeUp">Volume up</li>
+                <li id="volumeDown">Volume down</li>
+              </ul>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="toast">100%</div>
+        <div class="progress">
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="controls">
+            <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+            <button id="backward"><i class="fas fa-backward"></i></button>
+            <button id="pause"><i class="fas fa-pause"></i></button>
+            <button id="forward"><i class="fas fa-forward"></i></button>
+        </div>
+<!-- ---------------------------------- -->
+        <button class="fullscreen-button" id="fullscreenButton"><i class="fas fa-expand"></i></button> 
+    </footer>
+</body>
+<script src="script.js" ></script>
+</html>
